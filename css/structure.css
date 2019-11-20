@@ -1,0 +1,150 @@
+.container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 4fr 2fr;
+	grid-template-rows: auto 1fr;
+	grid-template-areas: "hd hd hd"
+  "sect sect sect"
+  "aside aside aside"
+  "ft ft ft";
+}
+
+header {
+	grid-area: hd;
+	display: flex;
+	flex-direction: column;
+}
+
+header div:nth-child(2) {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+section {
+	grid-area: sect;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "ft ft"
+  "one one"
+  "two two";
+}
+
+#featured {
+	grid-area: ft;
+}
+
+#featured .picture {
+	display: none;
+}
+
+article:nth-child(2) {
+	grid-area: one;
+}
+
+article:nth-child(3) {
+	grid-area: two;
+}
+
+aside {
+	grid-area: aside;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+}
+
+aside div {
+	max-width: 700px;
+}
+
+.menu {
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+footer {
+	grid-area: ft;
+}
+
+@media(min-width: 640px) {
+	header {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header div:nth-child(2) {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	section {
+		grid-template-areas: "ft ft"
+    "one two";
+	}
+
+	#featured .picture {
+		display: block;
+		width: 40%;
+		height: 40%;
+	}
+
+	#featured .content {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+@media(min-width: 760px) and (max-width: 1200px) {
+	.container {
+		grid-template-areas: "hd hd hd"
+    "sect sect aside"
+    "ft ft ft";
+	}
+}
+
+@media(min-width: 1000px) {
+	section {
+		grid-template-columns: 3fr 2fr;
+		grid-template-areas: "ft one"
+    "ft two";
+	}
+
+	.container {
+		grid-template-columns: 2fr 5fr 2fr;
+	}
+}
+
+@media(min-width: 1201px) {
+	.container {
+		grid-template-areas: "hd sect aside"
+    "hd sect aside"
+    "ft ft ft";
+	}
+
+	header {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	section {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "ft ft"
+    "one two";
+	}
+}
+
+@media(min-width: 1501px) {
+	section {
+		grid-template-columns: 2fr 2fr 3fr;
+		grid-template-areas: "ft ft one"
+    "ft ft two";
+	}
+
+	.container {
+		grid-template-columns: 1fr 4fr 1fr;
+	}
+}

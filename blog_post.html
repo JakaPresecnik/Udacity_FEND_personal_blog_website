@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/blog_post.css">
+      <title>1st Project Breakdown</title>
+   </head>
+   <body>
+      <div class="container" id="container">
+         <header>
+            <div class="title">
+               <h1>Blog Site Name</h1>
+            </div>
+            <div class="navbar">
+               <form action="https://google.com/search" method="get" class="search_form">
+                  <input class="search_bar" type="text" placeholder="" name="q">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+               </form>
+               <nav>
+                  <button class="about_icon" onclick="document.getElementById('about_author').style.display='block'" title="About"><span class="text_button_snd">About </span><i class="fa fa-question"></i></button>
+                  <button title="Contact"><span class="text_button_snd">Contact </span><i class="fa fa-phone"></i></button>
+                  <a href="index.html" title="Home-Refresh" class="def_butt"><span class="text_button_snd">Home </span><i class="fa fa-home"></i></a>
+                  <button onclick="document.getElementById('username_hidden').style.display='block'"><span class="text_button">Username </span><i class="fa fa-user-circle"></i></button>
+               </nav>
+            </div>
+         </header>
+         <div id="username_hidden" class="hidden">
+            <div class="username_box">
+               <button onclick="document.getElementById('login_hidden').style.display='block'">Log In</button>
+               <button onclick="document.getElementById('signup_hidden').style.display='block'">Sign Up</button>
+               <button onclick="document.getElementById('username_hidden').style.display='none'"><i class="fa fa-window-close"></i></button>
+            </div>
+         </div>
+         <div id="login_hidden" class="hidden">
+            <div class="username_box">
+               <form action="action_page.php" method="post">
+                  <label for="uname">Username</label>
+                  <input class="text_input" type="text" placeholder="Enter Username" name="uname" required>
+                  <label for="psw">Password</label>
+                  <input class="text_input" type="password" placeholder="Enter Password" name="psw" required>
+                  <button type="submit">Login</button>
+                  <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+               </form>
+               <button onclick="document.getElementById('login_hidden').style.display='none'"><i class="fa fa-window-close"></i></button>
+            </div>
+         </div>
+         <div id="signup_hidden" class="hidden">
+            <div class="username_box">
+               <form action="action_page.php" method="post">
+                  <label for="email">Email</label>
+                  <input class="text_input" type="text" placeholder="Enter your email" name="email" required>
+                  <label for="uname">Username</label>
+                  <input class="text_input" type="text" placeholder="Enter Username" name="uname" required>
+                  <label for="psw">Password</label>
+                  <input class="text_input" type="password" placeholder="Enter Password" name="psw" required>
+                  <label for="psw-rpt">Repeat Password</label>
+                  <input class="text_input" type="password" placeholder="Enter Password" name="psw-rpt" required>
+                  <button type="submit">Sign Up</button>
+               </form>
+               <p id="terms">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+               <button onclick="document.getElementById('signup_hidden').style.display='none'"><i class="fa fa-window-close"></i></button>
+            </div>
+         </div>
+         <div id="about_author" class="hidden">
+            <div class="authors_box">
+               <img src="images/default-avatar.jpg" alt="default avatar picture">
+               <div class="authors_details">
+                  <p><strong>Author's Name</strong></p>
+                  <p><em>Author's Occupation</em></p>
+                  <p><em>Author's Company</em></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, quam? Lorem ipsum dolor sit amet.</p>
+               </div>
+               <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+               <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+               <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+               <button onclick="document.getElementById('about_author').style.display='none'"><i class="fa fa-window-close"></i></button>
+            </div>
+         </div>
+         <section class="ntf_sect">
+            <article id="featured">
+               <h2>First Project Breakdown</h2>
+               <p>To keep myself focused and in sync with progress I break the project into this fractions, and use the oportunity to make a blog post:</p>
+               <ol>
+                  <li>
+                     <h5>Scheming the layout</h5>
+                     <ol class="inline_ol">
+                        <li>Draw a sample how the page would look like on smaller device</li>
+                        <li>Draw a sample how the page would look like on medium device</li>
+                        <li>Draw a sample how the page would look like on bigger device</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h5>Making HTML code</h5>
+                     <ol class="inline_ol">
+                        <li>Make HTML file</li>
+                        <li>Make CSS file and create a helper code(boxes for header, section, aside and footer)</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h5>Create grid layout</h5>
+                     <ol class="inline_ol">
+                        <li>Create grid for what is inside the container</li>
+                        <li>Change the grid for medium width</li>
+                        <li>Change the grid for big width</li>
+                        <li>Make corrections if needed</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h5>Making flex layout</h5>
+                     <ol class="inline_ol">
+                        <li>Make a helper CSS for children of header items</li>
+                        <li>Set flex inside CSS file for all widths for header items</li>
+                        <li>Make a helper CSS for children of section items</li>
+                        <li><del>Set flex inside CSS file for all widths for section items</del></li>
+                        <li>Make a grid for section items</li>
+                        <li>Change layout for other widths</li>
+                        <li>Make a helper CSS for children of aside items</li>
+                        <li>Set flex inside CSS file for all widths for aside items</li>
+                        <li>Make correction if needed</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h5>Styling the page</h5>
+                     <ol class="inline_ol">
+                        <li>Make another css file</li>
+                        <li>Style backgrounds, fonts, colors, buttons...</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h5>Make media querries</h5>
+                     <ol class="inline_ol">
+                        <li>Make a file for responsive design</li>
+                        <li>Fine style for small devices</li>
+                        <li>Fine style for small-medium devices</li>
+                        <li>Fine style for medium devices</li>
+                        <li>Fine style for medium-big devices</li>
+                        <li>Fine style for big devices</li>
+                        <li>Fine style for even bigger devices</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h5>Finish the project</h5>
+                     <ol class="inline_ol">
+                        <li>Insert pictures in HTML</li>
+                        <li>Rewrite sample text</li>
+                        <li>Check for bugs and finalize</li>
+                     </ol>
+                  </li>
+               </ol>
+               <a href="#container" class="art_btn">Back to Top</a>
+               <a href="index.html" class="art_btn">Home</a>
+            </article>
+         </section>
+         <aside>
+            <div id="about_author_bgr" class="authors_box_side">
+               <img src="images/default-avatar.jpg" alt="default avatar picture">
+               <div class="authors_details">
+                  <p><strong>Author's Name</strong></p>
+                  <p><em>Author's Occupation</em></p>
+                  <p><em>Author's Company</em></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, quam? Lorem ipsum dolor sit amet.</p>
+               </div>
+               <div class="social_box">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                  <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+               </div>
+            </div>
+            <div class="suggestion_box">
+               <p><strong>More from Nanodegree:</strong></p>
+               <article class="suggestion">
+                  <h4>Suggested Post</h4>
+                  <p>By: Author</p>
+                  <p>November 16, 2019</p>
+                  <a href="#">Read More</a>
+               </article>
+               <article class="suggestion">
+                  <h4>Suggested Post</h4>
+                  <p>By: Author</p>
+                  <p>November 15, 2019</p>
+                  <a href="#">Read More</a>
+               </article>
+            </div>
+         </aside>
+         <footer>
+            <details>
+               <summary>copyright 2019</summary>
+               <p>By: Jaka Presecnik</p>
+               <p>Made for Udacity's Front End Developer Nanodegree program.</p>
+            </details>
+         </footer>
+      </div>
+   </body>
+</html>

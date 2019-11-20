@@ -1,0 +1,105 @@
+@import "style.css";
+
+body {
+	font-size: 18px;
+}
+
+h5 {
+	font-family: 'Bitter', serif;
+	font-size: 1em;
+	margin: 0.5em;
+}
+
+#featured button {
+	margin: 0 1em;
+	padding: 0.5em;
+}
+
+.suggestion {
+	font-size: 13px;
+	padding: 0.3em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 5px solid #198CFF;
+	margin: 1em 0;
+}
+
+.suggestion a {
+	font-size: 1em;
+	width: 7em;
+	margin: 0.5em 0;
+}
+
+.suggestion p {
+	font-size: 1em;
+	margin: 0.5em;
+}
+
+aside {
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: space-around;
+	padding: 0.5em;
+}
+
+ol {
+	margin-block-start: 0.2em;
+	margin-block-end: 0.5em;
+	padding-inline-start: 1em;
+}
+
+.inline_ol {
+	list-style-type: upper-latin;
+}
+
+@media (min-width:760px) {
+	aside {
+		justify-content: flex-start;
+	}
+}
+
+@media (min-width:1200px) {
+	#featured {
+		overflow: auto;
+		height: 95%;
+	}
+
+	aside {
+		flex-wrap: nowrap;
+	}
+
+	.suggestion_box {
+		overflow: auto;
+	}
+
+	article::-webkit-scrollbar, .suggestion_box::-webkit-scrollbar {
+		width: 5px;
+		height: 8px;
+		background-color: #7fbfff;
+	}
+
+	header nav {
+		width: auto;
+	}
+
+	article::-webkit-scrollbar-thumb, .suggestion_box::-webkit-scrollbar {
+		background: #198CFF;
+		border-radius: 10px;
+	}
+
+	article::-webkit-scrollbar-thumb:hover, .suggestion_box::-webkit-scrollbar {
+		background: #0059b2;
+	}
+
+	footer {
+		z-index: 1;
+	}
+}
+
+@media (min-width: 1501px) {
+	.ntf_sect {
+		grid-template-areas: "ft ft ft"
+        "ft ft ft";
+	}
+}

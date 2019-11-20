@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+      <title>Blog Name</title>
+  </head>
+
+  <body>
+      <div class="container" id="container">
+          <header>
+              <div class="title">
+                  <h1>Blog Site Name</h1>
+              </div>
+              <div class="navbar">
+                  <form action="https://google.com/search" method="get" class="search_form">
+                      <input class="search_bar" type="text" placeholder="" name="q">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                  <nav>
+                      <button title="Contact"><span class="text_button_snd">Contact </span><i class="fa fa-phone"></i></button>
+                      <a href="index.html" class="def_butt"><span class="text_button_snd">Home </span><i class="fa fa-home"></i></a>
+                      <button onclick="document.getElementById('username_hidden').style.display='block'"><span class="text_button">Username </span><i class="fa fa-user-circle"></i></button>
+                  </nav>
+              </div>
+          </header>
+          <div id="username_hidden" class="hidden">
+              <div class="username_box">
+                  <button onclick="document.getElementById('login_hidden').style.display='block'">Log In</button>
+                  <button onclick="document.getElementById('signup_hidden').style.display='block'">Sign Up</button>
+                  <button onclick="document.getElementById('username_hidden').style.display='none'"><i class="fa fa-window-close"></i></button>
+              </div>
+          </div>
+          <div id="login_hidden" class="hidden">
+              <div class="username_box">
+                  <form action="action_page.php" method="post">
+                      <label for="uname">Username</label>
+                      <input class="text_input" type="text" placeholder="Enter Username" name="uname" required>
+                      <label for="psw">Password</label>
+                      <input class="text_input" type="password" placeholder="Enter Password" name="psw" required>
+                      <button type="submit">Login</button>
+                      <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                  </form>
+                  <button onclick="document.getElementById('login_hidden').style.display='none'"><i class="fa fa-window-close"></i></button>
+              </div>
+          </div>
+          <div id="signup_hidden" class="hidden">
+              <div class="username_box">
+                  <form action="action_page.php" method="post">
+                      <label for="email">Email</label>
+                      <input class="text_input" type="text" placeholder="Enter your email" name="email" required>
+                      <label for="uname">Username</label>
+                      <input class="text_input" type="text" placeholder="Enter Username" name="uname" required>
+                      <label for="psw">Password</label>
+                      <input class="text_input" type="password" placeholder="Enter Password" name="psw" required>
+                      <label for="psw-rpt">Repeat Password</label>
+                      <input class="text_input" type="password" placeholder="Enter Password" name="psw-rpt" required>
+                      <button type="submit">Sign Up</button>
+                  </form>
+                  <p id="terms">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                  <button onclick="document.getElementById('signup_hidden').style.display='none'"><i class="fa fa-window-close"></i></button>
+              </div>
+          </div>
+          <section class="ntf_sect">
+              <article id="featured">
+                  <img src="images/nanodegree.jpg" alt="background image" class="background">
+                  <p class="category">Nanodegree</p>
+                  <h2>Breaking down first project</h2>
+                  <div class="author">
+                      <p>By: Jaka Presecnik</p>
+                      <p>November 17, 2019</p>
+                  </div>
+                  <div class="content">
+                      <img src="images/project_one.jpg" alt="screen cap of my progress" class="picture">
+                      <p>In this article you will find how I break the project into smaller fractions, so it made working on the prioject easier and it helped me memorizing where I left the work, when I didn't had time to work on it.</p>
+                  </div>
+                  <a href="blog_post.html" class="art_btn">Read More</a>
+                  <!-- Link to the other link -->
+              </article>
+              <article class="previous">
+                  <div class="ntf_art">
+                      <p class="category">Category</p>
+                      <h3>Previous Blog Post</h3>
+                      <div class="author">
+                          <p>By: Author</p>
+                          <p>November 16, 2019</p>
+                      </div>
+                  </div>
+                  <div class="ntf_art">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque facilis neque dolores minima? Corporis, tempora.</p>
+                      <a href="#" class="art_btn">Read More</a>
+                  </div>
+              </article>
+              <article class="previous">
+                  <div class="ntf_art">
+                      <p class="category">Category</p>
+                      <h3>Previous Blog Post</h3>
+                      <div class="author">
+                          <p>By: Author</p>
+                          <p>November 15, 2019</p>
+                      </div>
+                  </div>
+                  <div class="ntf_art">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque facilis neque dolores minima? Corporis, tempora.</p>
+                      <a href="#" class="art_btn">Read More</a>
+                  </div>
+              </article>
+          </section>
+          <aside>
+              <div class="ntf_side">
+                  <h4>Archives</h4>
+                  <div class="menu">
+                      <a href="#">May</a>
+                      <a href="#">June</a>
+                      <a href="#">July</a>
+                      <a href="#">August</a>
+                      <a href="#">September</a>
+                      <a href="#">October</a>
+                  </div>
+              </div>
+              <div class="ntf_side">
+                  <h4>Category</h4>
+                  <div class="menu">
+                      <a href="#">Nanodegree</a>
+                      <a href="#">Work</a>
+                      <a href="#">Hobby</a>
+                  </div>
+              </div>
+          </aside>
+          <footer>
+              <details>
+                  <summary>copyright 2019</summary>
+                  <p>By: Jaka Presecnik</p>
+                  <p>Made for Udacity's Front End Developer Nanodegree program.</p>
+              </details>
+          </footer>
+      </div>
+  </body>
+  
+</html>

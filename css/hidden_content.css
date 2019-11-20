@@ -1,0 +1,133 @@
+nav .text_button, nav .text_button_snd{
+  display: none;
+  margin-right: 0.5em;
+}
+
+@media(min-width: 640px) {
+  nav .text_button {
+    display: inline;
+  }
+
+  nav .icon_button {
+    display: none;
+  }
+}
+
+@media(min-width: 1200px) {
+  nav .text_button_snd {
+    display: inline;
+  }
+}
+
+#about_author_bgr {
+  display: none;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.hidden {
+  position: fixed;
+  display: none;
+  z-index: 4;
+  background: rgba(25,140,255,0.4);
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.username_box {
+  background: rgba(25,140,255,0.8);
+  margin: 5em auto;
+  width:15em;
+  height: 25em;
+  display: grid;
+  justify-content: space-around;
+  align-content: space-around;
+  border: 2px solid #0059b2;
+  border-radius: 10px;
+}
+
+#username_hidden button {
+  width: 7em;
+}
+
+.username_box form {
+  display: grid;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.username_box .text_input {
+  margin: 5px 0 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: #7fbfff;
+  padding: 0.3em;
+}
+#terms {
+  font-family: Arial, sans-serif;
+  font-size: 0.8em;
+  margin: 0 1em;
+}
+.authors_box {
+  background: rgba(25,140,255,0.8);
+  margin: 2em auto;
+  padding: 1em;
+  width:15em;
+  height: 25em;
+  display: block;
+  border: 2px solid #0059b2;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.authors_box img, .authors_box_side img{
+  width: 8em;
+  border-radius: 50%;
+}
+
+.authors_details p {
+  margin: 0.6em 0;
+}
+
+.authors_box a {
+  padding: 0 0.2em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.authors_box a:hover {
+  color: #7fbf;
+}
+
+.authors_box button {
+  display: block;
+  margin: auto;
+}
+
+.authors_box_side {
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border-top: 1px solid #0059b2;
+  border-bottom: 1px solid #0059b2;
+}
+
+.social_box {
+  width: 10em;
+  display: inline;
+}
+
+.social_box a {
+  margin: auto;
+  padding: 10px;
+}
+
+@media(min-width: 760px) {
+  .about_icon {
+    display: none;
+  }
+
+  #about_author_bgr {
+    display: block;
+  }
+}
