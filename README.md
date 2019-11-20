@@ -3,7 +3,7 @@
 - This is a project for **Udacity**'s **Front End Developer** Nanogegree.
   - It is the 1st project for FED.
   
-## project contains:
+## Project contains:
 - README.md
 - index.html
 - blog_post.html
